@@ -28,8 +28,6 @@ export default function Hero() {
           important,{" "}
           <span className="text-desert-sun">running your business.</span>
           <br />
-          We create modern and mobile-centered online experiences that are sure
-          to engage your audience{" "}
         </p>
         <div className="flex flex-wrap gap-4">
           <a
