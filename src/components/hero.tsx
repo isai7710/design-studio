@@ -16,16 +16,20 @@ export default function Hero() {
 
       <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center relative z-10">
         <div className="relative">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 relative z-10">
-            <span className="block">DESIGN</span>
-            <span className="block text-desert-sun">FOR THE</span>
-            <span className="block">DIGITAL AGE</span>
+          <h1 className="text-5xl font-bold leading-tight mb-6 relative z-10">
+            <span className="block">MODERN</span>
+            <span className="block text-desert-sun">WEB DESIGN</span>
+            <span className="block">FOR BUSINESSES</span>
           </h1>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-accent-coral opacity-10 rounded-full blur-xl -z-10"></div>
         </div>
-        <p className="text-xl mb-8 max-w-md text-gray-300 bg-navy-dark/70 p-3 rounded-lg">
-          We create sophisticated, professional digital experiences that elevate
-          your brand and engage your audience.
+        <p className="text-xl mb-8 max-w-md text-gray-200 bg-navy-dark/70 p-3 rounded-lg">
+          Let us handle your online presence while you focus on what's
+          important,{" "}
+          <span className="text-desert-sun">running your business.</span>
+          <br />
+          We create modern and mobile-centered online experiences that are sure
+          to engage your audience{" "}
         </p>
         <div className="flex flex-wrap gap-4">
           <a
