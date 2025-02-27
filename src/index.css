@@ -1,24 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Lexend:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
 @theme {
-  --color-accent-coral: oklch(0.708 0.1849 30.72);
+  --color-midnight-blue: oklch(23.65% 0.0682 250.7);
+  --color-navy-blue: oklch(41.2% 0.0877 236.61);
+  --color-desert-sun: oklch(73.79% 0.1051 64.95);
+  --color-accent: oklch(69.1% 0.1693 55.89);
+  --font-lexend: "Lexend", "sans-serif";
+  --font-gugi: "Gugi", "sans-serif";
 }
 
 :root {
-  --navy-dark: #0a1929;
-  --navy: #0f2942;
-  --navy-light: #1e3a5f;
-  --accent: #00b8d9;
-  --accent-dark: #00a3c4;
-  --text: #ffffff;
-  --text-secondary: #94a3b8;
+  --midnight-blue: #001f3d;
+  --navy-blue: #045174;
+  --desert-sun: #d89c60;
+  --burnt-orange: #e87a00;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  color: var(--text);
-  background: var(--navy-dark);
-  overflow-x: hidden;
+  background: var(--midnight-blue);
 }
 
 /* Custom scrollbar */
@@ -27,16 +28,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navy-dark);
+  background: var(--midnight-blue);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--navy-light);
+  background: var(--burnt-orange);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  background: var(--desert-sun);
 }
 
 /* Smooth scroll behavior */
@@ -46,6 +47,6 @@ html {
 
 /* Focus styles for accessibility */
 :focus {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--burnt-orange);
   outline-offset: 2px;
 }
