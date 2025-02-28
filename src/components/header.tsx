@@ -16,42 +16,42 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border border-[#1E3A5F] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500  bg-transparent border border-[#1E3A5F] ${
         scrolled
-          ? "w-[85%] mx-auto mt-4 rounded-xl shadow-lg bg-midnight-blue/50 backdrop-blur-md"
-          : "w-full bg-midnight-blue border-none"
+          ? "w-[85%] mx-auto mt-4 rounded-xl shadow-md backdrop-blur-md"
+          : "w-full border-none"
       }`}
     >
-      <div className="container w-full max-w-7xl mx-auto p-4 lg:px-8">
-        <div className="flex items-center justify-between">
-          <div className="font-gugi text-xl lg:text-2xl">
-            <span className="text-desert-sun">NORTH PARK </span>
-            STUDIOS
-          </div>
-
-          <nav className="hidden md:flex space-x-8">
-            {["Home", "Services", "Work", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="relative text-lg font-medium text-desert-sun hover:text-white transition-colors duration-200"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-
-          <button
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+      <div
+        className={`flex items-center justify-between p-4 transition-all duration-500 ${scrolled ? "px-8" : "lg:px-16"}`}
+      >
+        <div className="font-gugi text-xl lg:text-2xl">
+          <span className="text-desert-sun">NORTH PARK </span>
+          STUDIOS
         </div>
+
+        <nav className="hidden md:flex space-x-8">
+          {["Home", "Services", "Work", "Contact"].map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="relative text-lg font-medium text-desert-sun hover:text-white transition-colors duration-200"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        <button
+          className="md:hidden"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
       </div>
 
       {/* Mobile menu */}
