@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="pt-8 md:pt-18 lg:pt-24 min-h-[80vh] flex flex-col md:flex-row items-start relative bg-midnight-blue">
+    <section className="pt-8 md:pt-20 min-h-screen overflow-x-hidden flex flex-col md:flex-row items-start relative bg-gradient-to-tr from-midnight-blue to-navy-blue to-90%">
       <div
         className="absolute inset-0 opacity-50"
         style={{
@@ -9,7 +9,7 @@ export default function Hero() {
       ></div>
 
       <div className="w-full md:w-1/2 p-8 xl:ml-12 flex flex-col justify-start sm:justify-center relative z-10">
-        <h1 className="text-4xl md:text-5xl 2xl:text-6xl xl:pt-8 font-bold leading-tight mb-4">
+        <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold leading-tight mb-4">
           <span className="block">
             MODERN <span className="hidden xl:inline">AND SLEEK</span>
           </span>
@@ -31,17 +31,23 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 p-8 md:p-16 relative">
-        <div className="relative w-full aspect-square max-w-lg mx-auto">
-          <div className="absolute inset-0 bg-accent rounded-md transform rotate-3 opacity-70"></div>
-          <div className="absolute inset-0 bg-navy-blue rounded-md transform -rotate-3 border border-navy-blue"></div>
-          <div className="relative bg-midnight-blue rounded-md p-4 border border-navy-blue">
+      <div className="w-full md:w-1/2 p-8">
+        <div className="relative z-10">
+          <div className="absolute !left-1/2 top-2.5 !h-[92%] !w-[69%] -translate-x-[52%] overflow-hidden rounded-[35px]">
+            {/*
             <img
-              src="/5999404.png"
-              alt="Creative design process"
-              className="w-full h-auto rounded-md z-10"
+              src={image.src}
+              alt={image.alt}
+              className="size-full object-cover object-[50%_0%]"
             />
+            */}
           </div>
+          <img
+            className="relative z-10 mx-auto"
+            src="https://shadcnblocks.com/images/block/mockups/phone-2.png"
+            width={250}
+            alt="iphone"
+          />
         </div>
       </div>
     </section>
